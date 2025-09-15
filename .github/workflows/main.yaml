@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ml-model-api
+    env: docker
+    dockerfilePath: Dockerfile
+    branch: main
+    plan: free
+    region: oregon
+    buildCommand: docker build -t ml-model-api .
+    startCommand: docker run -p 8000:8000 ml-model-api
+    envVars:
+      - key: PORT
+        value: "8000"
+    autoDeploy: true

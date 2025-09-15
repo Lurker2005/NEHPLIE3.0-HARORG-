@@ -1,0 +1,26 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore git files/folders
+.git
+.gitignore
+
+# Ignore virtual environment folders
+venv/
+nehplie/
+
+# Ignore Dockerfile itself (optional)
+Dockerfile
+
+# Ignore notebooks, docs, tests, large files you don't need in the image
+*.ipynb
+tests/
+docs/
+
+# Ignore any large data files or temp files
+*.log
+*.csv
+*.zip
+.DS_Store
